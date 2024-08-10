@@ -11,15 +11,15 @@ extension Font {
     static func paperlogy(size: CGFloat, weight: Font.Weight) -> Font {
         switch weight {
         case .thin:
-            return  Font.custom("Paperlogy-1Thin", size: size)
+            return Font.custom("Paperlogy-1Thin", size: size)
         case .ultraLight:
-            return  Font.custom("Paperlogy-2ExtraLight", size: size)
+            return Font.custom("Paperlogy-2ExtraLight", size: size)
         case .light:
-            return  Font.custom("Paperlogy-3Light", size: size)
+            return Font.custom("Paperlogy-3Light", size: size)
         case .regular:
-            return  Font.custom("Paperlogy-4Regular", size: size)
+            return Font.custom("Paperlogy-4Regular", size: size)
         case .medium:
-            return  Font.custom("Paperlogy-5Medium", size: size)
+            return Font.custom("Paperlogy-5Medium", size: size)
         case .semibold:
             return Font.custom("Paperlogy-6SemiBold", size: size)
         case .bold:
