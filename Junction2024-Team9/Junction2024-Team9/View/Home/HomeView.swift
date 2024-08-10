@@ -139,7 +139,15 @@ private struct HeaderView: View {
                 }
             }
             Spacer()
-            CoinView(coinAmount: coinAmount)
+            VStack(alignment: .trailing) {
+                NavigationLink {
+                    HistoryView()
+                } label: {
+                    Text("\(Image(systemName: "clock")) history")
+                        .font(.paperlogy(size: 12, weight: .regular))
+                }
+                CoinView(coinAmount: coinAmount)
+            }
         }.padding(.horizontal, 20)
             .padding(.top, 25)
 
