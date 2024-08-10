@@ -17,7 +17,7 @@ struct Junction2024_Team9App: App {
 
         WindowGroup {
             NavigationStack {
-                StoreView()
+                HomeView()
             }
         }
         .environmentObject(locationHelper)
