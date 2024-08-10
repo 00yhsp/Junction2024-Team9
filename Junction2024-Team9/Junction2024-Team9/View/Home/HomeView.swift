@@ -19,6 +19,8 @@ struct HomeView: View {
     @State var coinAmount: Int = 0
     @State var isClicked = false
     @State var randomIdx: Int = 0
+    @State var randomIdxForRoad = 0
+    @State var randomIdxForOthers = 0
     @State var othersDisabled: Bool = false
     @State var roadDisabled: Bool = true
     @EnvironmentObject var trigger: HomeTriggerWrapper
@@ -46,7 +48,7 @@ struct HomeView: View {
                     .font(.paperlogy(size: 12, weight: .regular))
             }.offset(x: -90, y: 260)
             VStack {
-                Image(.store)
+                adImages[randomIdxForOthers]
                 Text("Declare\nOthers")
                     .font(.paperlogy(size: 12, weight: .regular))
             }.offset(x: 70, y: -220)
@@ -59,7 +61,7 @@ struct HomeView: View {
                     }
                 }
             VStack {
-                Image(.store)
+                adImages[randomIdxForRoad]
                 Text("Declare\nRoad")
                     .font(.paperlogy(size: 12, weight: .regular))
             }.offset(x: 100, y: 200)
@@ -113,6 +115,8 @@ struct HomeView: View {
         .background(.black)
         .onReceive(timer) { _ in
             randomIdx = Int.random(in: 0...2)
+            randomIdxForRoad = Int.random(in: 0...2)
+            randomIdxForOthers = Int.random(in: 0...2)
         }
         .navigationDestination(isPresented: $trigger.trigger) {
             CaptureView()
