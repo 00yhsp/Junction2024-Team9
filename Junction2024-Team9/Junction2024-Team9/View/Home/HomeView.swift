@@ -8,10 +8,23 @@
 import SwiftUI
 import Lottie
 
+@Observable
+final class HomeTriggerWrapper {
+    var trigger = false
+}
+
 struct HomeView: View {
+    @State var adImages = [Image(.cinema), Image(.icecream), Image(.coffee)]
     @State var name: String = "~~"
     @State var coinAmount: Int = 0
     @State var isClicked = false
+    @State var randomIdx: Int = 0
+    @State var othersDisabled: Bool = false
+    @State var roadDisabled: Bool = true
+    @State var trigger = HomeTriggerWrapper()
+
+
+    let timer = Timer.publish(every: 3.0, on: .main, in: .common).autoconnect()
 
     var body: some View {
         ZStack {
@@ -20,6 +33,46 @@ struct HomeView: View {
                 HeaderView(coinAmount: coinAmount)
                 Spacer()
             }
+            Image(.mainbear)
+            VStack {
+                adImages[randomIdx]
+                Text("Advertisement")
+                    .font(.paperlogy(size: 12, weight: .regular))
+            }.offset(x: -120, y: -110)
+            VStack {
+                Image(.store)
+                Text("Store")
+                    .font(.paperlogy(size: 12, weight: .regular))
+            }.offset(x: -90, y: 260)
+            VStack {
+                Image(.store)
+                Text("Declare\nOthers")
+                    .font(.paperlogy(size: 12, weight: .regular))
+            }.offset(x: 70, y: -220)
+                .onTapGesture {
+                    if !othersDisabled {
+                        othersDisabled = true
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                            othersDisabled = false
+                        }
+                    }
+                }
+            VStack {
+                Image(.store)
+                Text("Declare\nRoad")
+                    .font(.paperlogy(size: 12, weight: .regular))
+            }.offset(x: 100, y: 200)
+                .onTapGesture {
+                    if !roadDisabled {
+                        roadDisabled = true
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                            roadDisabled = false
+                        }
+                    }
+                    else {
+                        trigger.trigger = true
+                    }
+                }
             if !isClicked {
                 VStack {
                     Spacer()
@@ -41,11 +94,29 @@ struct HomeView: View {
                         isClicked = true
                     }
                     Spacer()
+                }.background(.black.opacity(0.8))
+            }
+            if othersDisabled {
+                VStack {
+                    Spacer()
+                    Text("⚠️ detection exists")
+                        .font(.paperlogy(size: 16, weight: .regular))
+                        .padding(.vertical, 20)
+                        .padding(.horizontal, 43)
+                        .background(Color(red: 0.26, green: 0.26, blue: 0.26).opacity(0.8))
+                        .clipShape(RoundedRectangle(cornerRadius: 40))
+                        .padding(.bottom, 80)
                 }
             }
-
         }
         .background(.black)
+        .onReceive(timer) { _ in
+            randomIdx = Int.random(in: 0...2)
+        }
+        .navigationDestination(isPresented: $trigger.trigger) {
+            CaptureView()
+        }
+        .environment(trigger)
     }
 }
 
@@ -53,6 +124,20 @@ private struct HeaderView: View {
     let coinAmount: Int
     var body: some View {
         HStack {
+            VStack {
+                HStack {
+                    Text("Hello")
+                        .font(.paperlogy(size: 24, weight: .semibold))
+                        .foregroundStyle(.white)
+                    Spacer()
+                }
+                HStack {
+                    Text("POSCO")
+                        .font(.paperlogy(size: 28, weight: .bold))
+                        .foregroundStyle(Color.brand400)
+                    Spacer()
+                }
+            }
             Spacer()
             CoinView(coinAmount: coinAmount)
         }.padding(.horizontal, 20)

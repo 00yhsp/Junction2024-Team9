@@ -7,13 +7,12 @@
 
 import Foundation
 
-enum ProblemCategory {
-    case pothole
-    case crack
-    case trash
-    case banner
-    case vehicle
-
+enum ProblemCategory: String, CaseIterable {
+    case pothole = "Pothole"
+    case crack = "Crack"
+    case trash = "Trash"
+    case banner = "Banner"
+    case vehicle = "Vehicle"
 }
 
 enum HistorySelection: String, CaseIterable {
