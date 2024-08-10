@@ -13,8 +13,11 @@ struct Junction2024_Team9App: App {
     var body: some Scene {
 
         WindowGroup {
-            NavigationStack {
+            NavigationStack(path: $appRouter.path) {
                 HomeView()
+                    .navigationDestination(for: AppRoute.self) { route in
+                        appRouter.navDestVB(to: route)
+                    }
             }
         }.environmentObject(appRouter)
 

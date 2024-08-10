@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-final class AppRouter: ObservableObject {
+enum AppRoute: Hashable {
+    case captureView
+    case analyzeView
+    case historyView
+    case informationView
+}
 
-    enum AppRoute: Hashable {
-        case captureView
-        case analyzeView
-        case historyView
-        case informationView
-    }
+final class AppRouter: ObservableObject {
 
     @Published var path: [AppRoute] = .init()
 
