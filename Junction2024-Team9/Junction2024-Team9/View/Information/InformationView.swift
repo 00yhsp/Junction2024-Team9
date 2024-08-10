@@ -38,16 +38,13 @@ private struct TitleAndContentView: View {
 }
 
 private struct ButtonGroupView: View {
-    @EnvironmentObject private var router: AppRouter
     var body: some View {
         HStack(spacing: 20) {
             Button {
-                router.pop()
             } label: {
                 Text("다시")
             }.frame(maxWidth: .infinity)
             Button {
-                router.goHome()
             } label: {
                 Text("확인")
             }.frame(maxWidth: .infinity)

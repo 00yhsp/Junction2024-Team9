@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AnalyzeView: View {
-    //    @Binding var image: UIImage
+    @Binding var image: UIImage?
     @EnvironmentObject var locationHelper: LocationHelper
     
     @State var currentTimeStamp: String = ""
@@ -18,10 +18,12 @@ struct AnalyzeView: View {
             Spacer()
             HStack {
                 Spacer()
-                Image("coin 1")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 245, height: 245)
+                if let image = image {
+                    Image(uiImage: image )
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 245, height: 245)
+                }
                 Spacer()
             }
             
@@ -100,9 +102,9 @@ struct AnalyzeView: View {
         let currentTimeString = dateFormatter.string(from: Date())
         currentTimeStamp = currentTimeString
     }
-    
 }
 
-#Preview {
-    AnalyzeView()
-}
+//#Preview {
+//    AnalyzeView()
+//        .EnvironmentObject(LocationHelper)
+//}
