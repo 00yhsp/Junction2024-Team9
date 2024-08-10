@@ -6,21 +6,42 @@
 //
 
 import SwiftUI
+import Lottie
 
 struct HomeView: View {
     @State var name: String = "~~"
     @State var coinAmount: Int = 0
+    @State var isClicked = false
 
     var body: some View {
         ZStack {
             RadarView()
             VStack(spacing: 0) {
-                HStack {
-                    Spacer()
-                    CoinView()
-                }.padding(.horizontal, 20)
-                    .padding(.top, 25)
+                HeaderView(coinAmount: coinAmount)
                 Spacer()
+            }
+            if !isClicked {
+                VStack {
+                    Spacer()
+                    ZStack {
+                        Circle()
+                            .frame(width: 280, height: 280)
+                            .foregroundStyle(.black)
+                        Circle()
+                            .frame(width: 280, height: 280)
+                            .opacity(0.2)
+                            .blur(radius: 5)
+                        LottieView(animation: .named("click animation"))
+                            .looping()
+                            .offset(y: -20)
+                        Text("Click Circles")
+                            .font(.paperlogy(size: 20, weight: .regular))
+                            .offset(y: 90)
+                    }.onTapGesture {
+                        isClicked = true
+                    }
+                    Spacer()
+                }
             }
 
         }
@@ -28,8 +49,20 @@ struct HomeView: View {
     }
 }
 
+private struct HeaderView: View {
+    let coinAmount: Int
+    var body: some View {
+        HStack {
+            Spacer()
+            CoinView(coinAmount: coinAmount)
+        }.padding(.horizontal, 20)
+            .padding(.top, 25)
+
+    }
+}
+
 private struct CoinView: View {
-    let coinAmount: Int = 0
+    let coinAmount: Int
 
     var body: some View {
         HStack {
@@ -99,20 +132,20 @@ private struct RadarView: View {
         withAnimation(.linear(duration: 0.7)
             .delay((1.5/360) * (90 - 105))
             .repeatForever(autoreverses: true)) {
-            fadeAnimation1 = true
-        }
+                fadeAnimation1 = true
+            }
 
         withAnimation(.easeInOut(duration: 0.7)
             .delay((1.5/360) * (90 - 80))
             .repeatForever(autoreverses: true)) {
-            fadeAnimation2 = true
-        }
+                fadeAnimation2 = true
+            }
 
         withAnimation(.linear(duration: 0.5)
             .delay((1.5/360) * (90 - 25))
             .repeatForever(autoreverses: true)) {
-            fadeAnimation3 = true
-        }
+                fadeAnimation3 = true
+            }
     }
 }
 

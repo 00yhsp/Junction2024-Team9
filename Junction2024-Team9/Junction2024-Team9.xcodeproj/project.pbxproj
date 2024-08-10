@@ -29,6 +29,8 @@
 		DF4D8C792C67B90A005ED29D /* Paperlogy-9Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D8C662C67A5A7005ED29D /* Paperlogy-9Black.ttf */; };
 		DF4D8C7A2C67B90A005ED29D /* Paperlogy-3Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D8C692C67A5A7005ED29D /* Paperlogy-3Light.ttf */; };
 		DF4D8C7B2C67B90A005ED29D /* Paperlogy-7Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D8C682C67A5A7005ED29D /* Paperlogy-7Bold.ttf */; };
+		DF4D8C7F2C67CE6B005ED29D /* click animation.json in Resources */ = {isa = PBXBuildFile; fileRef = DF4D8C7E2C67CE6B005ED29D /* click animation.json */; };
+		DF4D8C822C67CED8005ED29D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DF4D8C812C67CED8005ED29D /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,7 @@
 		DF4D8C6E2C67A66A005ED29D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DF4D8C6F2C67A6DB005ED29D /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
 		DF4D8C712C67B0CE005ED29D /* AngularGradient+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AngularGradient+Extension.swift"; sourceTree = "<group>"; };
+		DF4D8C7E2C67CE6B005ED29D /* click animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "click animation.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF4D8C822C67CED8005ED29D /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,13 +92,13 @@
 		DF4D8C362C675923005ED29D /* Junction2024-Team9 */ = {
 			isa = PBXGroup;
 			children = (
+				DF4D8C7C2C67CE2D005ED29D /* Resources */,
 				DF4D8C6E2C67A66A005ED29D /* Info.plist */,
 				DF4D8C612C67915B005ED29D /* Enum */,
 				DF4D8C5E2C678EDD005ED29D /* Router */,
 				DF4D8C5B2C678667005ED29D /* Extension */,
 				DF4D8C552C678149005ED29D /* App */,
 				DF4D8C452C67808C005ED29D /* View */,
-				DF4D8C642C67A563005ED29D /* Font */,
 				DF4D8C3B2C675924005ED29D /* Assets.xcassets */,
 				DF4D8C3D2C675924005ED29D /* Preview Content */,
 			);
@@ -211,6 +215,23 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		DF4D8C7C2C67CE2D005ED29D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF4D8C7D2C67CE3A005ED29D /* Lottie */,
+				DF4D8C642C67A563005ED29D /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DF4D8C7D2C67CE3A005ED29D /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				DF4D8C7E2C67CE6B005ED29D /* click animation.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,6 +248,9 @@
 			dependencies = (
 			);
 			name = "Junction2024-Team9";
+			packageProductDependencies = (
+				DF4D8C812C67CED8005ED29D /* Lottie */,
+			);
 			productName = "Junction2024-Team9";
 			productReference = DF4D8C342C675923005ED29D /* Junction2024-Team9.app */;
 			productType = "com.apple.product-type.application";
@@ -255,6 +279,9 @@
 				Base,
 			);
 			mainGroup = DF4D8C2B2C675923005ED29D;
+			packageReferences = (
+				DF4D8C802C67CED8005ED29D /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = DF4D8C352C675923005ED29D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -271,6 +298,7 @@
 			files = (
 				DF4D8C3F2C675924005ED29D /* Preview Assets.xcassets in Resources */,
 				DF4D8C732C67B902005ED29D /* Paperlogy-1Thin.ttf in Resources */,
+				DF4D8C7F2C67CE6B005ED29D /* click animation.json in Resources */,
 				DF4D8C3C2C675924005ED29D /* Assets.xcassets in Resources */,
 				DF4D8C742C67B90A005ED29D /* Paperlogy-2ExtraLight.ttf in Resources */,
 				DF4D8C752C67B90A005ED29D /* Paperlogy-6SemiBold.ttf in Resources */,
@@ -516,6 +544,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DF4D8C802C67CED8005ED29D /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DF4D8C812C67CED8005ED29D /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF4D8C802C67CED8005ED29D /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DF4D8C2C2C675923005ED29D /* Project object */;
 }

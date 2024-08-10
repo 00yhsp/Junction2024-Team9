@@ -22,4 +22,23 @@ extension Color {
     static let brand600 = Color(uiColor: UIColor(red: 0.03, green: 0.6, blue: 0.84, alpha: 1))
     static let brand800 = Color(uiColor: UIColor(red: 0.02, green: 0.35, blue: 0.5, alpha: 1))
     static let brand900 = Color(uiColor: UIColor(red: 0.01, green: 0.28, blue: 0.4, alpha: 1))
+
+    init(hex: String) {
+        let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
+        var int: UInt64 = 0
+        Scanner(string: hex).scanHexInt64(&int)
+
+        let r, g, b: UInt64
+        r = (int >> 16) & 0xFF
+        g = (int >> 8) & 0xFF
+        b = int & 0xFF
+
+        self.init(
+            .sRGB,
+            red: Double(r) / 255,
+            green: Double(g) / 255,
+            blue: Double(b) / 255,
+            opacity: 1.0
+        )
+    }
 }
