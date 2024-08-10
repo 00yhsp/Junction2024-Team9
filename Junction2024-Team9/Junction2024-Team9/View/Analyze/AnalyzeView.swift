@@ -20,20 +20,16 @@ struct AnalyzeView: View {
         VStack(alignment: .leading) {
             Spacer()
             HStack {
+                Spacer()
                 if let image = image {
-                    Image(uiImage: image)
+                    Image(uiImage: image )
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 240, height: 320)
-                } else {
-                    Image(systemName: "photo")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 240, height: 320)
-
+                        .frame(width: 245, height: 245)
                 }
-            }.frame(maxWidth: .infinity)
-
+                Spacer()
+            }
+            
             Spacer()
             
             HStack {
@@ -172,7 +168,6 @@ struct AnalyzeView: View {
         let currentTimeString = dateFormatter.string(from: Date())
         currentTimeStamp = currentTimeString
     }
-    
 }
 
 #Preview {

@@ -10,11 +10,12 @@
 		CC94AB832C67FC440091A08A /* DrawingBoxesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC94AB822C67FC440091A08A /* DrawingBoxesView.swift */; };
 		CC94AB852C67FC4A0091A08A /* CaptureViewWrapped.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC94AB842C67FC4A0091A08A /* CaptureViewWrapped.swift */; };
 		CC94AB872C67FC500091A08A /* RoadDamage.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CC94AB862C67FC500091A08A /* RoadDamage.mlmodel */; };
+		CC94AB892C67FE940091A08A /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC94AB882C67FE940091A08A /* CaptureView.swift */; };
 		DF4D8C382C675923005ED29D /* Junction2024_Team9App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4D8C372C675923005ED29D /* Junction2024_Team9App.swift */; };
 		DF4D8C3C2C675924005ED29D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF4D8C3B2C675924005ED29D /* Assets.xcassets */; };
 		DF4D8C3F2C675924005ED29D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF4D8C3E2C675924005ED29D /* Preview Assets.xcassets */; };
 		DF4D8C4C2C678119005ED29D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4D8C4B2C678119005ED29D /* HomeView.swift */; };
-		DF4D8C4E2C67812B005ED29D /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4D8C4D2C67812B005ED29D /* CaptureView.swift */; };
+		DF4D8C4E2C67812B005ED29D /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4D8C4D2C67812B005ED29D /* CameraView.swift */; };
 		DF4D8C502C678133005ED29D /* AnalyzeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4D8C4F2C678133005ED29D /* AnalyzeView.swift */; };
 		DF4D8C522C67813A005ED29D /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4D8C512C67813A005ED29D /* HistoryView.swift */; };
 		DF4D8C542C678143005ED29D /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4D8C532C678143005ED29D /* InformationView.swift */; };
@@ -41,12 +42,13 @@
 		CC94AB822C67FC440091A08A /* DrawingBoxesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingBoxesView.swift; sourceTree = "<group>"; };
 		CC94AB842C67FC4A0091A08A /* CaptureViewWrapped.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewWrapped.swift; sourceTree = "<group>"; };
 		CC94AB862C67FC500091A08A /* RoadDamage.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RoadDamage.mlmodel; sourceTree = "<group>"; };
+		CC94AB882C67FE940091A08A /* CaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureView.swift; sourceTree = "<group>"; };
 		DF4D8C342C675923005ED29D /* Junction2024-Team9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Junction2024-Team9.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF4D8C372C675923005ED29D /* Junction2024_Team9App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Junction2024_Team9App.swift; sourceTree = "<group>"; };
 		DF4D8C3B2C675924005ED29D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF4D8C3E2C675924005ED29D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF4D8C4B2C678119005ED29D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		DF4D8C4D2C67812B005ED29D /* CaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureView.swift; sourceTree = "<group>"; };
+		DF4D8C4D2C67812B005ED29D /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		DF4D8C4F2C678133005ED29D /* AnalyzeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeView.swift; sourceTree = "<group>"; };
 		DF4D8C512C67813A005ED29D /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		DF4D8C532C678143005ED29D /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
@@ -144,7 +146,9 @@
 		DF4D8C472C678099005ED29D /* Capture */ = {
 			isa = PBXGroup;
 			children = (
-				DF4D8C4D2C67812B005ED29D /* CaptureView.swift */,
+
+				CC94AB882C67FE940091A08A /* CaptureView.swift */,
+				DF4D8C4D2C67812B005ED29D /* CameraView.swift */,
 				CC94AB822C67FC440091A08A /* DrawingBoxesView.swift */,
 				CC94AB842C67FC4A0091A08A /* CaptureViewWrapped.swift */,
 				CC94AB862C67FC500091A08A /* RoadDamage.mlmodel */,
@@ -336,6 +340,7 @@
 				DF4D8C5D2C678673005ED29D /* Color+Extension.swift in Sources */,
 				CC94AB832C67FC440091A08A /* DrawingBoxesView.swift in Sources */,
 				DF4D8C722C67B0CE005ED29D /* AngularGradient+Extension.swift in Sources */,
+				CC94AB892C67FE940091A08A /* CaptureView.swift in Sources */,
 				DF4D8C4C2C678119005ED29D /* HomeView.swift in Sources */,
 				DF4D8C522C67813A005ED29D /* HistoryView.swift in Sources */,
 				E770F7C22C67C83800F2CB16 /* LocationHelper.swift in Sources */,
@@ -343,7 +348,7 @@
 				DF4D8C702C67A6DB005ED29D /* Font+Extension.swift in Sources */,
 				DF4D8C382C675923005ED29D /* Junction2024_Team9App.swift in Sources */,
 				DF4D8C632C679174005ED29D /* Enums.swift in Sources */,
-				DF4D8C4E2C67812B005ED29D /* CaptureView.swift in Sources */,
+				DF4D8C4E2C67812B005ED29D /* CameraView.swift in Sources */,
 				CC94AB872C67FC500091A08A /* RoadDamage.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,17 +483,20 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Junction2024-Team9/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GKWM8Q6TMS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Junction2024-Team9/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 사용권한";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "앱이 백그라운드와 포그라운드에서 위치 서비스를 사용하려면 접근권한이 필요합니다.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "앱을 사용하는 동안 위치 접근 권한이 필요합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "이미지 저장을 위해 갤러리를 사용합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -515,17 +523,20 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Junction2024-Team9/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GKWM8Q6TMS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Junction2024-Team9/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 사용권한";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "앱이 백그라운드와 포그라운드에서 위치 서비스를 사용하려면 접근권한이 필요합니다.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "앱을 사용하는 동안 위치 접근 권한이 필요합니다.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "이미지 저장을 위해 갤러리를 사용합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

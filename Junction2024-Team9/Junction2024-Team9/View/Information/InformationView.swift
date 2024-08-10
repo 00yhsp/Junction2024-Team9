@@ -31,8 +31,20 @@ struct InformationView: View {
                         .scaledToFit()
                         .frame(width: 240, height: 320)
 
+private struct ButtonGroupView: View {
+    var body: some View {
+        HStack(spacing: 20) {
+            Button {
+            } label: {
+                Text("다시")
+            }
+             .frame(maxWidth: .infinity)
+          
+            Button {
+            } label: {
+                Text("확인")
                 }
-            }.frame(maxWidth: .infinity)
+            .frame(maxWidth: .infinity)
 
             Spacer()
 
