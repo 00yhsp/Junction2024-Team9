@@ -20,6 +20,15 @@
 		DF4D8C632C679174005ED29D /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4D8C622C679174005ED29D /* Enums.swift */; };
 		DF4D8C702C67A6DB005ED29D /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4D8C6F2C67A6DB005ED29D /* Font+Extension.swift */; };
 		DF4D8C722C67B0CE005ED29D /* AngularGradient+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4D8C712C67B0CE005ED29D /* AngularGradient+Extension.swift */; };
+		DF4D8C732C67B902005ED29D /* Paperlogy-1Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D8C6B2C67A5A7005ED29D /* Paperlogy-1Thin.ttf */; };
+		DF4D8C742C67B90A005ED29D /* Paperlogy-2ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D8C6A2C67A5A7005ED29D /* Paperlogy-2ExtraLight.ttf */; };
+		DF4D8C752C67B90A005ED29D /* Paperlogy-6SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D8C6C2C67A5A7005ED29D /* Paperlogy-6SemiBold.ttf */; };
+		DF4D8C762C67B90A005ED29D /* Paperlogy-4Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D8C672C67A5A7005ED29D /* Paperlogy-4Regular.ttf */; };
+		DF4D8C772C67B90A005ED29D /* Paperlogy-5Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D8C652C67A5A6005ED29D /* Paperlogy-5Medium.ttf */; };
+		DF4D8C782C67B90A005ED29D /* Paperlogy-8ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D8C6D2C67A5A7005ED29D /* Paperlogy-8ExtraBold.ttf */; };
+		DF4D8C792C67B90A005ED29D /* Paperlogy-9Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D8C662C67A5A7005ED29D /* Paperlogy-9Black.ttf */; };
+		DF4D8C7A2C67B90A005ED29D /* Paperlogy-3Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D8C692C67A5A7005ED29D /* Paperlogy-3Light.ttf */; };
+		DF4D8C7B2C67B90A005ED29D /* Paperlogy-7Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D8C682C67A5A7005ED29D /* Paperlogy-7Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -261,7 +270,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF4D8C3F2C675924005ED29D /* Preview Assets.xcassets in Resources */,
+				DF4D8C732C67B902005ED29D /* Paperlogy-1Thin.ttf in Resources */,
 				DF4D8C3C2C675924005ED29D /* Assets.xcassets in Resources */,
+				DF4D8C742C67B90A005ED29D /* Paperlogy-2ExtraLight.ttf in Resources */,
+				DF4D8C752C67B90A005ED29D /* Paperlogy-6SemiBold.ttf in Resources */,
+				DF4D8C762C67B90A005ED29D /* Paperlogy-4Regular.ttf in Resources */,
+				DF4D8C772C67B90A005ED29D /* Paperlogy-5Medium.ttf in Resources */,
+				DF4D8C782C67B90A005ED29D /* Paperlogy-8ExtraBold.ttf in Resources */,
+				DF4D8C792C67B90A005ED29D /* Paperlogy-9Black.ttf in Resources */,
+				DF4D8C7A2C67B90A005ED29D /* Paperlogy-3Light.ttf in Resources */,
+				DF4D8C7B2C67B90A005ED29D /* Paperlogy-7Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -83,8 +83,6 @@ private struct RadarView: View {
     }
 }
 
-
-
 #Preview {
     HomeView()
 }
