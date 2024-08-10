@@ -29,6 +29,7 @@
 		DF4D8C792C67B90A005ED29D /* Paperlogy-9Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D8C662C67A5A7005ED29D /* Paperlogy-9Black.ttf */; };
 		DF4D8C7A2C67B90A005ED29D /* Paperlogy-3Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D8C692C67A5A7005ED29D /* Paperlogy-3Light.ttf */; };
 		DF4D8C7B2C67B90A005ED29D /* Paperlogy-7Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D8C682C67A5A7005ED29D /* Paperlogy-7Bold.ttf */; };
+		DFAFD1D32C67EE5800F0B61E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DFAFD1D22C67EE5800F0B61E /* Lottie */; };
 		E770F7BE2C67C7BC00F2CB16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E770F7BD2C67C7BC00F2CB16 /* AppDelegate.swift */; };
 		E770F7C22C67C83800F2CB16 /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E770F7C12C67C83800F2CB16 /* LocationHelper.swift */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFAFD1D32C67EE5800F0B61E /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +243,9 @@
 			dependencies = (
 			);
 			name = "Junction2024-Team9";
+			packageProductDependencies = (
+				DFAFD1D22C67EE5800F0B61E /* Lottie */,
+			);
 			productName = "Junction2024-Team9";
 			productReference = DF4D8C342C675923005ED29D /* Junction2024-Team9.app */;
 			productType = "com.apple.product-type.application";
@@ -269,6 +274,9 @@
 				Base,
 			);
 			mainGroup = DF4D8C2B2C675923005ED29D;
+			packageReferences = (
+				DFAFD1D12C67EE5700F0B61E /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = DF4D8C352C675923005ED29D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -538,6 +546,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DFAFD1D12C67EE5700F0B61E /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DFAFD1D22C67EE5800F0B61E /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DFAFD1D12C67EE5700F0B61E /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DF4D8C2C2C675923005ED29D /* Project object */;
 }
