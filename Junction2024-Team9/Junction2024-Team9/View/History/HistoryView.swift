@@ -47,7 +47,7 @@ struct HistoryView: View {
         VStack(alignment: .leading) {
             List(reportList, id: \.self) { report in
                 NavigationLink {
-                    AnalyzeView()
+                    AnalyzeView(image: .constant(UIImage(named: "photo")))
                 } label: {
                     HStack {
                         reportStatusView(category: report.status)
