@@ -16,7 +16,6 @@
 		DF4D8C522C67813A005ED29D /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4D8C512C67813A005ED29D /* HistoryView.swift */; };
 		DF4D8C542C678143005ED29D /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4D8C532C678143005ED29D /* InformationView.swift */; };
 		DF4D8C5D2C678673005ED29D /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4D8C5C2C678673005ED29D /* Color+Extension.swift */; };
-		DF4D8C602C678EE8005ED29D /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4D8C5F2C678EE8005ED29D /* AppRouter.swift */; };
 		DF4D8C632C679174005ED29D /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4D8C622C679174005ED29D /* Enums.swift */; };
 		DF4D8C702C67A6DB005ED29D /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4D8C6F2C67A6DB005ED29D /* Font+Extension.swift */; };
 		DF4D8C722C67B0CE005ED29D /* AngularGradient+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4D8C712C67B0CE005ED29D /* AngularGradient+Extension.swift */; };
@@ -46,7 +45,6 @@
 		DF4D8C512C67813A005ED29D /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		DF4D8C532C678143005ED29D /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
 		DF4D8C5C2C678673005ED29D /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
-		DF4D8C5F2C678EE8005ED29D /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		DF4D8C622C679174005ED29D /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		DF4D8C652C67A5A6005ED29D /* Paperlogy-5Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Paperlogy-5Medium.ttf"; sourceTree = "<group>"; };
 		DF4D8C662C67A5A7005ED29D /* Paperlogy-9Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Paperlogy-9Black.ttf"; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 				E770F7C02C67C82700F2CB16 /* Utils */,
 				DF4D8C6E2C67A66A005ED29D /* Info.plist */,
 				DF4D8C612C67915B005ED29D /* Enum */,
-				DF4D8C5E2C678EDD005ED29D /* Router */,
 				DF4D8C5B2C678667005ED29D /* Extension */,
 				DF4D8C552C678149005ED29D /* App */,
 				DF4D8C452C67808C005ED29D /* View */,
@@ -187,14 +184,6 @@
 				DF4D8C712C67B0CE005ED29D /* AngularGradient+Extension.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		DF4D8C5E2C678EDD005ED29D /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				DF4D8C5F2C678EE8005ED29D /* AppRouter.swift */,
-			);
-			path = Router;
 			sourceTree = "<group>";
 		};
 		DF4D8C612C67915B005ED29D /* Enum */ = {
@@ -338,7 +327,6 @@
 				DF4D8C722C67B0CE005ED29D /* AngularGradient+Extension.swift in Sources */,
 				DF4D8C4C2C678119005ED29D /* HomeView.swift in Sources */,
 				DF4D8C522C67813A005ED29D /* HistoryView.swift in Sources */,
-				DF4D8C602C678EE8005ED29D /* AppRouter.swift in Sources */,
 				E770F7C22C67C83800F2CB16 /* LocationHelper.swift in Sources */,
 				DF4D8C502C678133005ED29D /* AnalyzeView.swift in Sources */,
 				DF4D8C702C67A6DB005ED29D /* Font+Extension.swift in Sources */,

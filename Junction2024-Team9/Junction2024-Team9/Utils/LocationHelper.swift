@@ -61,7 +61,7 @@ class LocationHelper: NSObject, ObservableObject {
             let postalCode = placemark.postalCode ?? ""
             
             // 주소 정보 결합
-            self?.currentAddress = "\(country) \(administrativeArea) \(locality) \(subLocality) \(thoroughfare) \(subThoroughfare)"
+            self?.currentAddress = "\(locality) \(subLocality) \(thoroughfare) \(subThoroughfare)"
         }
     }
 }
