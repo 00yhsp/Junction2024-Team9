@@ -8,16 +8,12 @@
 import SwiftUI
 
 struct HistoryView: View {
-    @State private var selection: HistorySelection = .period
+    let approved: String = "checkmark.circle.fill"
+    let rejected: String = "clock.fill"
+    let notYet: String = "xmark.circle.fill"
+
     var body: some View {
-        VStack {
-            Picker("", selection: $selection) {
-                ForEach(HistorySelection.allCases, id: \.self) {
-                    Text($0.rawValue)
-                }
-            }.pickerStyle(.segmented)
-            Spacer()
-        }
+        Text("")
     }
 }
 
