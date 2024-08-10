@@ -146,6 +146,7 @@
 		DF4D8C472C678099005ED29D /* Capture */ = {
 			isa = PBXGroup;
 			children = (
+
 				CC94AB882C67FE940091A08A /* CaptureView.swift */,
 				DF4D8C4D2C67812B005ED29D /* CameraView.swift */,
 				CC94AB822C67FC440091A08A /* DrawingBoxesView.swift */,

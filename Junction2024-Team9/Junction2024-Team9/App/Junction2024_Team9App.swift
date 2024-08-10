@@ -15,10 +15,9 @@ struct Junction2024_Team9App: App {
     var body: some Scene {
 
         WindowGroup {
-            NavigationStack() {
-                CaptureView()
+            NavigationStack {
+                HomeView()
             }
-            
         }
         .environmentObject(locationHelper)
     }

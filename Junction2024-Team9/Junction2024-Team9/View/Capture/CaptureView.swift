@@ -5,7 +5,10 @@
 //  Created by LeeWanJae on 8/11/24.
 //
 
-import SwiftUI
+import AVKit
+import UIKit
+import Vision
+import CoreImage
 
 struct CaptureView: View {
     @State private var capturedImage: UIImage? = nil // 캡처된 이미지를 저장하는 상태 변수
