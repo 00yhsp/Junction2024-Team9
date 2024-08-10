@@ -35,6 +35,7 @@
 		DFAFD1D32C67EE5800F0B61E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DFAFD1D22C67EE5800F0B61E /* Lottie */; };
 		DFAFD1D72C67EF5200F0B61E /* click animation.json in Resources */ = {isa = PBXBuildFile; fileRef = DFAFD1D62C67EF5200F0B61E /* click animation.json */; };
 		E7603CA12C68106000182332 /* CoinHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7603CA02C68106000182332 /* CoinHistoryView.swift */; };
+		E7603CA32C68286500182332 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7603CA22C68286500182332 /* StoreView.swift */; };
 		E770F7BE2C67C7BC00F2CB16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E770F7BD2C67C7BC00F2CB16 /* AppDelegate.swift */; };
 		E770F7C22C67C83800F2CB16 /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E770F7C12C67C83800F2CB16 /* LocationHelper.swift */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		DF4D8C712C67B0CE005ED29D /* AngularGradient+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AngularGradient+Extension.swift"; sourceTree = "<group>"; };
 		DFAFD1D62C67EF5200F0B61E /* click animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "click animation.json"; sourceTree = "<group>"; };
 		E7603CA02C68106000182332 /* CoinHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinHistoryView.swift; sourceTree = "<group>"; };
+		E7603CA22C68286500182332 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 		E770F7BD2C67C7BC00F2CB16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E770F7C12C67C83800F2CB16 /* LocationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +172,7 @@
 			children = (
 				DF4D8C512C67813A005ED29D /* HistoryView.swift */,
 				E7603CA02C68106000182332 /* CoinHistoryView.swift */,
+				E7603CA22C68286500182332 /* StoreView.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				DF4D8C382C675923005ED29D /* Junction2024_Team9App.swift in Sources */,
 				DF4D8C632C679174005ED29D /* Enums.swift in Sources */,
 				DF4D8C4E2C67812B005ED29D /* CameraView.swift in Sources */,
+				E7603CA32C68286500182332 /* StoreView.swift in Sources */,
 				CC94AB872C67FC500091A08A /* RoadDamage.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
