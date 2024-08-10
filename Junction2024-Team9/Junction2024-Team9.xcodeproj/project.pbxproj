@@ -29,6 +29,8 @@
 		DF4D8C792C67B90A005ED29D /* Paperlogy-9Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D8C662C67A5A7005ED29D /* Paperlogy-9Black.ttf */; };
 		DF4D8C7A2C67B90A005ED29D /* Paperlogy-3Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D8C692C67A5A7005ED29D /* Paperlogy-3Light.ttf */; };
 		DF4D8C7B2C67B90A005ED29D /* Paperlogy-7Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D8C682C67A5A7005ED29D /* Paperlogy-7Bold.ttf */; };
+		E770F7BE2C67C7BC00F2CB16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E770F7BD2C67C7BC00F2CB16 /* AppDelegate.swift */; };
+		E770F7C22C67C83800F2CB16 /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E770F7C12C67C83800F2CB16 /* LocationHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		DF4D8C6E2C67A66A005ED29D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DF4D8C6F2C67A6DB005ED29D /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
 		DF4D8C712C67B0CE005ED29D /* AngularGradient+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AngularGradient+Extension.swift"; sourceTree = "<group>"; };
+		E770F7BD2C67C7BC00F2CB16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E770F7C12C67C83800F2CB16 /* LocationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 		DF4D8C362C675923005ED29D /* Junction2024-Team9 */ = {
 			isa = PBXGroup;
 			children = (
+				E770F7C02C67C82700F2CB16 /* Utils */,
 				DF4D8C6E2C67A66A005ED29D /* Info.plist */,
 				DF4D8C612C67915B005ED29D /* Enum */,
 				DF4D8C5E2C678EDD005ED29D /* Router */,
@@ -165,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				DF4D8C372C675923005ED29D /* Junction2024_Team9App.swift */,
+				E770F7BD2C67C7BC00F2CB16 /* AppDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -209,6 +215,14 @@
 				DF4D8C662C67A5A7005ED29D /* Paperlogy-9Black.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		E770F7C02C67C82700F2CB16 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E770F7C12C67C83800F2CB16 /* LocationHelper.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,12 +304,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E770F7BE2C67C7BC00F2CB16 /* AppDelegate.swift in Sources */,
 				DF4D8C542C678143005ED29D /* InformationView.swift in Sources */,
 				DF4D8C5D2C678673005ED29D /* Color+Extension.swift in Sources */,
 				DF4D8C722C67B0CE005ED29D /* AngularGradient+Extension.swift in Sources */,
 				DF4D8C4C2C678119005ED29D /* HomeView.swift in Sources */,
 				DF4D8C522C67813A005ED29D /* HistoryView.swift in Sources */,
 				DF4D8C602C678EE8005ED29D /* AppRouter.swift in Sources */,
+				E770F7C22C67C83800F2CB16 /* LocationHelper.swift in Sources */,
 				DF4D8C502C678133005ED29D /* AnalyzeView.swift in Sources */,
 				DF4D8C702C67A6DB005ED29D /* Font+Extension.swift in Sources */,
 				DF4D8C382C675923005ED29D /* Junction2024_Team9App.swift in Sources */,

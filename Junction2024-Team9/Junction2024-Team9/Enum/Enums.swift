@@ -10,6 +10,10 @@ import Foundation
 enum ProblemCategory {
     case pothole
     case crack
+    case trash
+    case banner
+    case vehicle
+
 }
 
 enum HistorySelection: String, CaseIterable {
