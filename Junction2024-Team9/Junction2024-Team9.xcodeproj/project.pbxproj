@@ -30,6 +30,7 @@
 		DF4D8C7A2C67B90A005ED29D /* Paperlogy-3Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D8C692C67A5A7005ED29D /* Paperlogy-3Light.ttf */; };
 		DF4D8C7B2C67B90A005ED29D /* Paperlogy-7Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF4D8C682C67A5A7005ED29D /* Paperlogy-7Bold.ttf */; };
 		DFAFD1D32C67EE5800F0B61E /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DFAFD1D22C67EE5800F0B61E /* Lottie */; };
+		DFAFD1D72C67EF5200F0B61E /* click animation.json in Resources */ = {isa = PBXBuildFile; fileRef = DFAFD1D62C67EF5200F0B61E /* click animation.json */; };
 		E770F7BE2C67C7BC00F2CB16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E770F7BD2C67C7BC00F2CB16 /* AppDelegate.swift */; };
 		E770F7C22C67C83800F2CB16 /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E770F7C12C67C83800F2CB16 /* LocationHelper.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		DF4D8C6E2C67A66A005ED29D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DF4D8C6F2C67A6DB005ED29D /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
 		DF4D8C712C67B0CE005ED29D /* AngularGradient+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AngularGradient+Extension.swift"; sourceTree = "<group>"; };
+		DFAFD1D62C67EF5200F0B61E /* click animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "click animation.json"; sourceTree = "<group>"; };
 		E770F7BD2C67C7BC00F2CB16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E770F7C12C67C83800F2CB16 /* LocationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +96,7 @@
 		DF4D8C362C675923005ED29D /* Junction2024-Team9 */ = {
 			isa = PBXGroup;
 			children = (
+				DFAFD1D42C67EEE500F0B61E /* Resources */,
 				E770F7C02C67C82700F2CB16 /* Utils */,
 				DF4D8C6E2C67A66A005ED29D /* Info.plist */,
 				DF4D8C612C67915B005ED29D /* Enum */,
@@ -101,7 +104,6 @@
 				DF4D8C5B2C678667005ED29D /* Extension */,
 				DF4D8C552C678149005ED29D /* App */,
 				DF4D8C452C67808C005ED29D /* View */,
-				DF4D8C642C67A563005ED29D /* Font */,
 				DF4D8C3B2C675924005ED29D /* Assets.xcassets */,
 				DF4D8C3D2C675924005ED29D /* Preview Content */,
 			);
@@ -219,6 +221,23 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		DFAFD1D42C67EEE500F0B61E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DFAFD1D52C67EF4700F0B61E /* Lottie */,
+				DF4D8C642C67A563005ED29D /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DFAFD1D52C67EF4700F0B61E /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				DFAFD1D62C67EF5200F0B61E /* click animation.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
 		E770F7C02C67C82700F2CB16 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +312,7 @@
 			files = (
 				DF4D8C3F2C675924005ED29D /* Preview Assets.xcassets in Resources */,
 				DF4D8C732C67B902005ED29D /* Paperlogy-1Thin.ttf in Resources */,
+				DFAFD1D72C67EF5200F0B61E /* click animation.json in Resources */,
 				DF4D8C3C2C675924005ED29D /* Assets.xcassets in Resources */,
 				DF4D8C742C67B90A005ED29D /* Paperlogy-2ExtraLight.ttf in Resources */,
 				DF4D8C752C67B90A005ED29D /* Paperlogy-6SemiBold.ttf in Resources */,
