@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct HistoryView: View {
+    @State private var selection: HistorySelection = .period
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Picker("", selection: $selection) {
+                ForEach(HistorySelection.allCases, id: \.self) {
+                    Text($0.rawValue)
+                }
+            }.pickerStyle(.segmented)
+            Spacer()
+        }
     }
 }
 

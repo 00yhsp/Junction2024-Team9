@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct Junction2024_Team9App: App {
+    @StateObject private var appRouter: AppRouter = .init()
     var body: some Scene {
+
         WindowGroup {
-            HomeView()
-        }
+            NavigationStack {
+                HomeView()
+            }
+        }.environmentObject(appRouter)
+
     }
 }
