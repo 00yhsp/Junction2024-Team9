@@ -8,9 +8,9 @@
 import SwiftUI
 import Lottie
 
-@Observable
-final class HomeTriggerWrapper {
-    var trigger = false
+
+final class HomeTriggerWrapper: ObservableObject {
+    @Published var trigger = false
 }
 
 struct HomeView: View {
@@ -21,7 +21,8 @@ struct HomeView: View {
     @State var randomIdx: Int = 0
     @State var othersDisabled: Bool = false
     @State var roadDisabled: Bool = true
-    @State var trigger = HomeTriggerWrapper()
+    @EnvironmentObject var trigger: HomeTriggerWrapper
+
 
 
     let timer = Timer.publish(every: 3.0, on: .main, in: .common).autoconnect()
@@ -116,7 +117,6 @@ struct HomeView: View {
         .navigationDestination(isPresented: $trigger.trigger) {
             CaptureView()
         }
-        .environment(trigger)
     }
 }
 

@@ -13,7 +13,7 @@ struct InformationView: View {
     @State var currentTimeStamp: String = ""
     @State var problem: ProblemCategory?
     @Environment(\.dismiss) var dismiss
-    @Environment(HomeTriggerWrapper.self) var trigger
+    @EnvironmentObject var trigger: HomeTriggerWrapper
     let problems = ProblemCategory.allCases
 
     var body: some View {
@@ -31,20 +31,8 @@ struct InformationView: View {
                         .scaledToFit()
                         .frame(width: 240, height: 320)
 
-private struct ButtonGroupView: View {
-    var body: some View {
-        HStack(spacing: 20) {
-            Button {
-            } label: {
-                Text("다시")
-            }
-             .frame(maxWidth: .infinity)
-          
-            Button {
-            } label: {
-                Text("확인")
                 }
-            .frame(maxWidth: .infinity)
+            }.frame(maxWidth: .infinity)
 
             Spacer()
 
@@ -191,5 +179,5 @@ private struct ButtonGroupView: View {
 #Preview {
     InformationView(image: .constant(UIImage(named: "photo")))
         .environmentObject(LocationHelper())
-        .environment(HomeTriggerWrapper())
+        .environmentObject(HomeTriggerWrapper())
 }

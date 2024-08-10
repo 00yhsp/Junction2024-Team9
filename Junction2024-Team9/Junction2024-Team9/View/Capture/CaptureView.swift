@@ -6,6 +6,7 @@
 //
 
 import AVKit
+import SwiftUI
 import UIKit
 import Vision
 import CoreImage

@@ -11,7 +11,8 @@ import SwiftUI
 struct Junction2024_Team9App: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @StateObject private var locationHelper = LocationHelper.shared
-    
+    @StateObject var trigger = HomeTriggerWrapper()
+
     var body: some Scene {
 
         WindowGroup {
@@ -20,5 +21,6 @@ struct Junction2024_Team9App: App {
             }
         }
         .environmentObject(locationHelper)
+        .environmentObject(trigger)
     }
 }

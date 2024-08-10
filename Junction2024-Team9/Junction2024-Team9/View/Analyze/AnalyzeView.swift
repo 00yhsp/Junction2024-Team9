@@ -13,7 +13,7 @@ struct AnalyzeView: View {
     @State var currentTimeStamp: String = ""
     @State var problem: ProblemCategory?
     @Environment(\.dismiss) var dismiss
-    @Environment(HomeTriggerWrapper.self) var trigger
+    @EnvironmentObject var trigger: HomeTriggerWrapper
     let problems = ProblemCategory.allCases
 
     var body: some View {
@@ -173,5 +173,5 @@ struct AnalyzeView: View {
 #Preview {
     AnalyzeView(image: .constant(UIImage(named: "photo")))
         .environmentObject(LocationHelper())
-        .environment(HomeTriggerWrapper())
+        .environmentObject(HomeTriggerWrapper())
 }
