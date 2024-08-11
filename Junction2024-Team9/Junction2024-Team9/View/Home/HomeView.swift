@@ -14,18 +14,13 @@ final class HomeTriggerWrapper: ObservableObject {
 }
 
 struct HomeView: View {
-    @State var adImages = [Image(.crack), Image(.restaurants), Image(.store), Image(.reporting)]
     @State var name: String = "~~"
     @State var coinAmount: Int = 0
     @State var isClicked = false
-    @State var randomIdx: Int = 0
-    @State var randomIdxForRoad = 0
-    @State var randomIdxForOthers = 0
     @State var othersDisabled: Bool = false
     @State var roadDisabled: Bool = true
     @EnvironmentObject var trigger: HomeTriggerWrapper
-
-
+    @State private var imageOffsets: [CGFloat] = [0, 0, 0, 0]
 
     let timer = Timer.publish(every: 3.0, on: .main, in: .common).autoconnect()
 
@@ -37,21 +32,35 @@ struct HomeView: View {
                 Spacer()
             }
             Image(.mainbear)
-            VStack {
-                Image(.restaurants)
-                Text("Advertisement")
-                    .font(.paperlogy(size: 12, weight: .regular))
-            }.offset(x: -120, y: -110)
-            VStack {
-                Image(.store)
-                Text("Store")
-                    .font(.paperlogy(size: 12, weight: .regular))
+            Button {
+                openWebsite()
+            } label: {
+                VStack {
+                    Image(.restaurants)
+                    Text("Restaurants\nlookup")
+                        .multilineTextAlignment(.center)
+                        .font(.paperlogy(size: 12, weight: .regular))
+                }
+            }
+            .offset(x: -120, y: -110)
+            .offset(y: imageOffsets[0])
+            NavigationLink {
+                StoreView(myCoin: coinAmount)
+            } label: {
+                VStack {
+                    Image(.store)
+                    Text("Store")
+                        .font(.paperlogy(size: 12, weight: .regular))
+                }
             }.offset(x: -90, y: 260)
+                .offset(y: imageOffsets[1])
             VStack {
                 Image(.reporting)
-                Text("Declare\nOthers")
+                Text("Illegal Act\nReporting")
+                    .multilineTextAlignment(.center)
                     .font(.paperlogy(size: 12, weight: .regular))
             }.offset(x: 70, y: -220)
+                .offset(y: imageOffsets[2])
                 .onTapGesture {
                     if !othersDisabled {
                         othersDisabled = true
@@ -62,9 +71,11 @@ struct HomeView: View {
                 }
             VStack {
                 Image(.crack)
-                Text("Declare\nRoad")
+                Text("Crack&Pothole\nDetection")
+                    .multilineTextAlignment(.center)
                     .font(.paperlogy(size: 12, weight: .regular))
             }.offset(x: 100, y: 200)
+                .offset(y: imageOffsets[3])
                 .onTapGesture {
                     if !roadDisabled {
                         roadDisabled = true
@@ -113,13 +124,32 @@ struct HomeView: View {
             }
         }
         .background(.black)
-        .onReceive(timer) { _ in
-            randomIdx = Int.random(in: 0...2)
-            randomIdxForRoad = Int.random(in: 0...2)
-            randomIdxForOthers = Int.random(in: 0...2)
-        }
+        .onReceive(timer, perform: { _ in
+            updateImageOffsets()
+        })
         .navigationDestination(isPresented: $trigger.trigger) {
             CaptureView()
+        }
+    }
+
+    private func openWebsite() {
+        if let url = URL(string: "https://naver.me/GoDzWE72") {
+            UIApplication.shared.open(url)
+        } else {
+            print("Invalid URL")
+        }
+    }
+
+    private func updateImageOffsets() {
+        for i in 0..<imageOffsets.count {
+            let randomOffset = CGFloat.random(in: -10...10) // 랜덤 오프셋 생성
+            withAnimation(
+                Animation
+                    .easeInOut(duration: Double.random(in: 1.0...2.0)) // 각 애니메이션에 다른 지속 시간
+                    .repeatForever(autoreverses: true)
+            ) {
+                imageOffsets[i] = randomOffset
+            }
         }
     }
 }
