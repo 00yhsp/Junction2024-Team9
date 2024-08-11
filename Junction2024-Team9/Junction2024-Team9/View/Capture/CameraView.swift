@@ -24,7 +24,7 @@
         // 감지 횟수
         private var lastDetectedObject: VNRecognizedObjectObservation?
         private var detectionCount: Int = 0
-        private let maxDetectionCount: Int = 10
+        private let maxDetectionCount: Int = 20
 
         private var bufferImage: UIImage?
         // MARK: Life Cycle

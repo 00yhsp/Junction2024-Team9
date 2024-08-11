@@ -22,10 +22,10 @@ struct CaptureView: View {
             // 이미지가 캡처되면 다른 뷰로 네비게이션
             if capturedImage != nil {
                 NavigationLink(destination: AnalyzeView(image: $capturedImage)) {
-                    Text("다른 뷰로 이동")
+                    Text("Move to AnalyzeView")
                 }
             } else {
-                Text("이미지를 캡처하세요")
+                Text("Detecting...")
             }
         }
     }
