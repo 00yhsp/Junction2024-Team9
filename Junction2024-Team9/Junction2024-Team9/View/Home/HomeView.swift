@@ -14,7 +14,7 @@ final class HomeTriggerWrapper: ObservableObject {
 }
 
 struct HomeView: View {
-    @State var adImages = [Image(.cinema), Image(.icecream), Image(.coffee)]
+    @State var adImages = [Image(.crack), Image(.restaurants), Image(.store), Image(.reporting)]
     @State var name: String = "~~"
     @State var coinAmount: Int = 0
     @State var isClicked = false
@@ -38,7 +38,7 @@ struct HomeView: View {
             }
             Image(.mainbear)
             VStack {
-                adImages[randomIdx]
+                Image(.restaurants)
                 Text("Advertisement")
                     .font(.paperlogy(size: 12, weight: .regular))
             }.offset(x: -120, y: -110)
@@ -48,7 +48,7 @@ struct HomeView: View {
                     .font(.paperlogy(size: 12, weight: .regular))
             }.offset(x: -90, y: 260)
             VStack {
-                adImages[randomIdxForOthers]
+                Image(.reporting)
                 Text("Declare\nOthers")
                     .font(.paperlogy(size: 12, weight: .regular))
             }.offset(x: 70, y: -220)
@@ -61,7 +61,7 @@ struct HomeView: View {
                     }
                 }
             VStack {
-                adImages[randomIdxForRoad]
+                Image(.crack)
                 Text("Declare\nRoad")
                     .font(.paperlogy(size: 12, weight: .regular))
             }.offset(x: 100, y: 200)
