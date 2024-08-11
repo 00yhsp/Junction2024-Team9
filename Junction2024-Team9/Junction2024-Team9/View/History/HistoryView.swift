@@ -30,24 +30,13 @@ struct HistoryView: View {
         ReportModel(status: .notYet, category: .trash, date: "2024-08-08"),
         ReportModel(status: .approved, category: .banner, date: "2024-08-09"),
         ReportModel(status: .rejected, category: .vehicle, date: "2024-08-10"),
-        ReportModel(status: .approved, category: .pothole, date: "2024-08-01"),
-        ReportModel(status: .notYet, category: .crack, date: "2024-08-02"),
-        ReportModel(status: .rejected, category: .trash, date: "2024-08-03"),
-        ReportModel(status: .approved, category: .banner, date: "2024-08-04"),
-        ReportModel(status: .notYet, category: .vehicle, date: "2024-08-05"),
-        ReportModel(status: .rejected, category: .pothole, date: "2024-08-06"),
-        ReportModel(status: .approved, category: .crack, date: "2024-08-07"),
-        ReportModel(status: .notYet, category: .trash, date: "2024-08-08"),
-        ReportModel(status: .approved, category: .banner, date: "2024-08-09"),
-        ReportModel(status: .rejected, category: .vehicle, date: "2024-08-10"),
-        
     ]
     
     var body: some View {
         VStack(alignment: .leading) {
             List(reportList, id: \.self) { report in
                 NavigationLink {
-                    AnalyzeView(image: .constant(UIImage(named: "photo")))
+                    InformationView(image: .constant(UIImage(named: "history1")))
                 } label: {
                     HStack {
                         reportStatusView(category: report.status)

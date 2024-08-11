@@ -34,7 +34,7 @@ struct StoreView: View {
                             .offset(x: 120, y: -90)
                     }
                 HStack {
-                    Text("Phohang Gift Certificate ₩ 10,000")
+                    Text("Pohang Gift Certificate ₩ 10,000")
                     Spacer()
                     Image("coin 1")
                         .padding(.trailing, -10)
@@ -46,7 +46,7 @@ struct StoreView: View {
                 Image("gift5000")
                     .padding(.top, 40)
                 HStack {
-                    Text("Phohang Gift Certificate ₩ 5,000")
+                    Text("Pohang Gift Certificate ₩ 5,000")
                     Spacer()
                     Image("coin 1")
                         .padding(.trailing, -10)

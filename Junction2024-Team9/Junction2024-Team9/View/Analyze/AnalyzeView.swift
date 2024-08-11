@@ -22,6 +22,9 @@ struct AnalyzeView: View {
             HStack {
                 Spacer()
                 Image(uiImage: image ?? UIImage(named: "history1")!)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 245, height: 245)
                 Spacer()
             }
             

@@ -37,7 +37,7 @@ struct HomeView: View {
             } label: {
                 VStack {
                     Image(.restaurants)
-                    Text("Restaurants\nlookup")
+                    Text("Restaurants\nLookup")
                         .multilineTextAlignment(.center)
                         .font(.paperlogy(size: 12, weight: .regular))
                 }
@@ -101,7 +101,7 @@ struct HomeView: View {
                         LottieView(animation: .named("click animation"))
                             .looping()
                             .offset(y: -20)
-                        Text("Click Circles")
+                        Text("Click Icons")
                             .font(.paperlogy(size: 20, weight: .regular))
                             .offset(y: 90)
                     }.onTapGesture {
@@ -113,7 +113,7 @@ struct HomeView: View {
             if othersDisabled {
                 VStack {
                     Spacer()
-                    Text("⚠️ detection exists")
+                    Text("⚠️ report exists")
                         .font(.paperlogy(size: 16, weight: .regular))
                         .padding(.vertical, 20)
                         .padding(.horizontal, 43)
