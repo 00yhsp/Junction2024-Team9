@@ -15,7 +15,7 @@ final class HomeTriggerWrapper: ObservableObject {
 
 struct HomeView: View {
     @State var name: String = "~~"
-    @State var coinAmount: Int = 0
+    @State var coinAmount: Int = 1000
     @State var isClicked = false
     @State var othersDisabled: Bool = false
     @State var roadDisabled: Bool = true
@@ -178,7 +178,7 @@ private struct HeaderView: View {
                     HistoryView()
                 } label: {
                     Text("\(Image(systemName: "clock")) history")
-                        .font(.paperlogy(size: 12, weight: .regular))
+                        .font(.paperlogy(size: 18, weight: .regular))
                 }
                 CoinView(coinAmount: coinAmount)
             }
