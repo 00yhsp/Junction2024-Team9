@@ -142,7 +142,7 @@ struct HomeView: View {
 
     private func updateImageOffsets() {
         for i in 0..<imageOffsets.count {
-            let randomOffset = CGFloat.random(in: -10...10) // 랜덤 오프셋 생성
+            let randomOffset = CGFloat.random(in: -15...15) // 랜덤 오프셋 생성
             withAnimation(
                 Animation
                     .easeInOut(duration: Double.random(in: 1.0...2.0)) // 각 애니메이션에 다른 지속 시간
